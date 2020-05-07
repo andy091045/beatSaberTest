@@ -38,13 +38,11 @@
   <ItemGroup>
      <Compile Include="Assets\Score.cs" />
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
-     <Compile Include="Assets\SpawnerB.cs" />
      <Compile Include="Assets\SpawnerR.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\lightbox.cs" />
      <Compile Include="Assets\saber.cs" />
-     <Compile Include="Assets\sheepMusicB.cs" />
-     <Compile Include="Assets\sheepMusicR.cs" />
+     <Compile Include="Assets\sheepMusic.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
