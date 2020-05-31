@@ -19,6 +19,7 @@ public class SpawnerR : MonoBehaviour
     private void Awake()
     {
 
+
     }
     void Start()
     {
