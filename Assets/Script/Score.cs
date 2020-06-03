@@ -6,17 +6,29 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     public Text scoreText;
-    public float score;
+    public Text LOSS;
+    public float score = 10;
     void Start()
     {
+        InvokeRepeating(" MinusScore", 1, 1);
         DisplayScore();
-
     }
 
+    public void MinusScore()
+    {
+        score -= 1;
+        DisplayScore();
+        if (score <= 0)
+        {
+            LOSS.enabled = !LOSS.enabled;
+            CancelInvoke("timer");
+        }
+    }
 
     void Update()
     {
         DisplayScore();
+
     }
     public void distroyCube()
     {

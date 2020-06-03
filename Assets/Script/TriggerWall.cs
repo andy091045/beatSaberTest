@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TriggerWall : MonoBehaviour
 {
+    public Score andy;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,10 +13,10 @@ public class TriggerWall : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-
+        andy.MinusScore();
         Lean.Pool.LeanPool.Despawn(col.gameObject);
         Debug.Log("false");
-
+        CancelInvoke("timer");
     }
     // Update is called once per frame
     void Update()
