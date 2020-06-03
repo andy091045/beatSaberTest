@@ -36,6 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Number.cs" />
+     <Compile Include="Assets\Script\Numbers.cs" />
      <Compile Include="Assets\Script\Score.cs" />
      <Compile Include="Assets\Script\Scripts\SimpleCameraController.cs" />
      <Compile Include="Assets\Script\SpawnerR.cs" />

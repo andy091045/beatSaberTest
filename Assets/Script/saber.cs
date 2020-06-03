@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class saber : MonoBehaviour
 {
+
     public AudioClip impact;
     AudioSource audiosource;
     public Score andy;
+    public Numbers amy;
     public LayerMask layer;
     private Vector3 previousPos;
     // Start is called before the first frame update
@@ -32,6 +34,7 @@ public class saber : MonoBehaviour
                 Debug.Log("music");
                 Destroy(hit.transform.gameObject);
                 andy.distroyCube();
+                amy.distroyCube();
 
             }
         }

@@ -21,13 +21,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material 1
-  m_Shader: {fileID: 4800000, guid: 128e987d567d4e2c824d754223b3f3b0, type: 3}
+  m_Shader: {fileID: 4800000, guid: 0406db5a14f94604a8c57ccfbc9f3b46, type: 3}
   m_ShaderKeywords: _EMISSION _FADING_ON _FLIPBOOKBLENDING_ON
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3050
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses:
   - ALWAYS
   - SHADOWCASTER
