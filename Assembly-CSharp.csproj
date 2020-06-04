@@ -42,6 +42,7 @@
      <Compile Include="Assets\Script\Scripts\SimpleCameraController.cs" />
      <Compile Include="Assets\Script\SpawnerR.cs" />
      <Compile Include="Assets\Script\TriggerWall.cs" />
+     <Compile Include="Assets\Script\ViveInput.cs" />
      <Compile Include="Assets\Script\WallGroup.cs" />
      <Compile Include="Assets\Script\lightbox.cs" />
      <Compile Include="Assets\Script\saber.cs" />

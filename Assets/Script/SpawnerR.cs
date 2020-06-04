@@ -32,7 +32,7 @@ public class SpawnerR : MonoBehaviour
     {
 
 
-        if (timer > beat && i < 8)
+        if (timer > beat && i < 16)
         {
 
             if (playMusic.musicBlue[i] == 1)
@@ -79,6 +79,48 @@ public class SpawnerR : MonoBehaviour
             }
 
 
+            if (playMusic.musicYellow[i] == 1)
+            {
+                GameObject cube = Lean.Pool.LeanPool.Spawn(cubes[2], points[0]);
+                cube.transform.localPosition = Vector3.zero;
+            }
+            else if (playMusic.musicYellow[i] == 2)
+            {
+                GameObject cube = Lean.Pool.LeanPool.Spawn(cubes[2], points[1]);
+                cube.transform.localPosition = Vector3.zero;
+            }
+            else if (playMusic.musicYellow[i] == 3)
+            {
+                GameObject cube = Lean.Pool.LeanPool.Spawn(cubes[2], points[2]);
+                cube.transform.localPosition = Vector3.zero;
+            }
+            else if (playMusic.musicYellow[i] == 4)
+            {
+                GameObject cube = Lean.Pool.LeanPool.Spawn(cubes[2], points[3]);
+                cube.transform.localPosition = Vector3.zero;
+            }
+
+
+            if (playMusic.musicPurple[i] == 1)
+            {
+                GameObject cube = Lean.Pool.LeanPool.Spawn(cubes[3], points[0]);
+                cube.transform.localPosition = Vector3.zero;
+            }
+            else if (playMusic.musicPurple[i] == 2)
+            {
+                GameObject cube = Lean.Pool.LeanPool.Spawn(cubes[3], points[1]);
+                cube.transform.localPosition = Vector3.zero;
+            }
+            else if (playMusic.musicPurple[i] == 3)
+            {
+                GameObject cube = Lean.Pool.LeanPool.Spawn(cubes[3], points[2]);
+                cube.transform.localPosition = Vector3.zero;
+            }
+            else if (playMusic.musicPurple[i] == 4)
+            {
+                GameObject cube = Lean.Pool.LeanPool.Spawn(cubes[3], points[3]);
+                cube.transform.localPosition = Vector3.zero;
+            }
 
 
             timer -= beat;

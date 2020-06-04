@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class saber : MonoBehaviour
 {
+    public GameObject Sword;
+
+    public GameObject NextSword;
+
+    public GameObject changeSword;
 
     public AudioClip impact;
     AudioSource audiosource;
@@ -18,11 +23,29 @@ public class saber : MonoBehaviour
         audiosource = GetComponent<AudioSource>();
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+
+        if (other.name == "redSword" || other.name == "blueSword" || other.name == "yellowSword" || other.name == "purpleSword")
+        {
+            Sword.SetActive(false);
+            NextSword.SetActive(true);
+            changeSword = Sword;
+            Sword = NextSword;
+            NextSword = changeSword;
+
+        }
+    }
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
+            Sword.SetActive(false);
+            NextSword.SetActive(true);
+            changeSword = Sword;
+            Sword = NextSword;
+            NextSword = changeSword;
             audiosource.PlayOneShot(impact);
         }
         RaycastHit hit;
