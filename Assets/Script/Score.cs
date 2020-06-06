@@ -29,6 +29,7 @@ public class Score : MonoBehaviour
         }
     }
 
+
     void Update()
     {
         DisplayScore();
@@ -37,7 +38,7 @@ public class Score : MonoBehaviour
     public void distroyCube()
     {
 
-        score += 1;
+        score += 2;
         DisplayScore();
 
     }

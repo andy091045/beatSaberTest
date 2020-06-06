@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Lean.Pool;
+using UnityEngine.UI;
 
 public class SpawnerR : MonoBehaviour
 {
+    public Text WIN;
     public GameObject[] cubes;
     public Transform[] points;
     public float beat = (60 / 130) * 2;
@@ -25,14 +27,18 @@ public class SpawnerR : MonoBehaviour
     {
 
     }
+    public void WinGame()
+    {
+        WIN.enabled = !WIN.enabled;
 
+    }
     // Update is called once per frame
 
     void Update()
     {
 
 
-        if (timer > beat && i < 16)
+        if (timer > beat)
         {
 
             if (playMusic.musicBlue[i] == 1)
@@ -128,6 +134,10 @@ public class SpawnerR : MonoBehaviour
 
         }
         timer += Time.deltaTime;
+        if (i >= 180)
+        {
+
+        }
     }
 
 

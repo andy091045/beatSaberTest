@@ -57,7 +57,7 @@ public class saber : MonoBehaviour
             {
                 audiosource.PlayOneShot(impact);
                 Debug.Log("music");
-                Destroy(hit.transform.gameObject);
+                Lean.Pool.LeanPool.Despawn(hit.transform.gameObject);
                 andy.distroyCube();
                 amy.distroyCube();
 

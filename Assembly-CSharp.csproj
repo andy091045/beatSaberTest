@@ -36,11 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\Number.cs" />
      <Compile Include="Assets\Script\Numbers.cs" />
      <Compile Include="Assets\Script\Score.cs" />
      <Compile Include="Assets\Script\Scripts\SimpleCameraController.cs" />
      <Compile Include="Assets\Script\SpawnerR.cs" />
+     <Compile Include="Assets\Script\Start\rotate.cs" />
+     <Compile Include="Assets\Script\Start\startSaber.cs" />
      <Compile Include="Assets\Script\TriggerWall.cs" />
      <Compile Include="Assets\Script\ViveInput.cs" />
      <Compile Include="Assets\Script\WallGroup.cs" />

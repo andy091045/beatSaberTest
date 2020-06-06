@@ -36,7 +36,7 @@ public class Numbers : MonoBehaviour
     }
     public void distroyCube()
     {
-        score += 1;
+        score += 2;
         DisplayScore();
     }
 
