@@ -1,0 +1,12 @@
+class A{
+    string _version;
+    string[] _BPMChanges;
+    B[] _events;
+    
+}
+class B{
+    float _time;
+    int _type;
+    int _value;
+
+}
