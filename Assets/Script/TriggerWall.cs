@@ -17,7 +17,7 @@ public class TriggerWall : MonoBehaviour
         andy.MinusScore();
         amy.MinusScore();
         Lean.Pool.LeanPool.Despawn(col.gameObject);
-        Debug.Log("false");
+        // Debug.Log("false");
         CancelInvoke("timer");
     }
     // Update is called once per frame

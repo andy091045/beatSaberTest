@@ -36,7 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Number.cs" />
+     <Compile Include="Assets\Script\Number.cs" />
      <Compile Include="Assets\Script\Numbers.cs" />
      <Compile Include="Assets\Script\Score.cs" />
      <Compile Include="Assets\Script\Scripts\SimpleCameraController.cs" />
@@ -46,6 +46,7 @@
      <Compile Include="Assets\Script\WallGroup.cs" />
      <Compile Include="Assets\Script\lightbox.cs" />
      <Compile Include="Assets\Script\saber.cs" />
+     <Compile Include="Assets\Script\saberLeft.cs" />
      <Compile Include="Assets\Script\sheepMusic.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

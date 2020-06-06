@@ -26,10 +26,12 @@ public class saber : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 
-        if (other.name == "redSword" || other.name == "blueSword" || other.name == "yellowSword" || other.name == "purpleSword")
+        if (other.name == "Controller (right)" || other.name == "Controller (left)")
         {
+            Debug.Log("Change!");
             Sword.SetActive(false);
             NextSword.SetActive(true);
+
             changeSword = Sword;
             Sword = NextSword;
             NextSword = changeSword;
