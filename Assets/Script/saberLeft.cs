@@ -64,7 +64,5 @@ public class saberLeft : MonoBehaviour
             }
         }
         previousPos = transform.position;
-
-
     }
 }
