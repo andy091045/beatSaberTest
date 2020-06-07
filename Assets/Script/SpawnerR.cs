@@ -134,9 +134,9 @@ public class SpawnerR : MonoBehaviour
 
         }
         timer += Time.deltaTime;
-        if (i >= 180)
+        if (i == 180)
         {
-
+            WinGame();
         }
     }
 
