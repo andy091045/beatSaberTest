@@ -50,6 +50,7 @@
      <Compile Include="Assets\Script\saberLeft.cs" />
      <Compile Include="Assets\Script\sheepMusic.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\car.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -671,6 +672,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{e423635f-9fc0-f7b4-cc5f-5f26f2970946}</Project>
+      <Name>SteamVR_Actions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="LeanPool.csproj">
       <Project>{14716a0f-f81f-ffcd-b489-1ed60b4a5330}</Project>
       <Name>LeanPool</Name>
